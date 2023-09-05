@@ -1,0 +1,138 @@
+body {
+    background-color: #29354d;
+    color: #fcfdfd;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.wrap-main {
+    padding: 50px;
+}
+
+nav {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 0.75;
+}
+
+.nav-items a {
+    display: inline-flex;
+    margin-left: 20px;
+    color: #fcfdfd;
+    transition: border-color 0.4s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.wrapnav {
+    height: 40px;
+    margin: 5px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-items a:hover,
+.nav-items a:focus {
+    border: 2px solid #fcfdfd;
+    border-radius: 40px;
+    padding: 5px 20px;
+}
+
+.nav-items a:first-child {
+    margin-left: 0;
+}
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fcfdfd;
+    margin-bottom: 5px;
+    transition: background-color 0.3s;
+}
+
+.explore-container {
+    margin-top: 75px;
+    padding: 0 20px;
+}
+
+.explore-title {
+    font-size: 45px;
+    letter-spacing: 6px;
+    font-weight: bold;
+}
+
+.the-world {
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.rounded-button {
+    background-color: transparent;
+    padding: 15px 35px;
+    border: 2px solid #fcfdfd;
+    border-radius: 40px;
+    color: #fcfdfd;
+    cursor: pointer;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 600px) {
+    .nav-items {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .nav-items a {
+        margin: 5px;
+    }
+
+    .rounded-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .explore-title {
+        font-size: 30px;
+        letter-spacing: 4px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .rounded-button {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+}

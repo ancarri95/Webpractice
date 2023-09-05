@@ -1,0 +1,216 @@
+/* Header styles */
+html {
+    font-family: "Roboto";
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #f5f5f5;
+    padding: 7px;
+  }
+  
+  .HamburgerButton {
+    display: none;
+  }
+  
+  .StartBootstrap {
+    font-weight: bold;
+    padding-left: 50px;
+    font-weight: bolder;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .NavItems {
+    display: flex;
+    align-items: center;
+    margin-right: 12px;
+  }
+  
+  .SignInButton {
+    background-color: #287cfe;
+    color: #fff;
+    padding: 7px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  /* Main styles */
+  .MiddleSection {
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  
+  h1 {
+    font-size: 40px;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #2f2f2f, #65a4a3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .BackgroundWaves {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60vh;
+    background-image: url("5376622-water-fog-mist-cloud-nature-sea-ocean-coast-wave-outdoors-foggy-water-azure-blue-open-sea-open-water-png-images.jpg");
+    background-size: cover;
+    background-position: bottom;
+    z-index: -1;
+  }
+  
+  .EmailSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .EmailInput {
+    padding: 10px;
+    width: 300px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  
+  .EmailInput:focus {
+    outline: none;
+  }
+  
+  .SignupButton {
+    background-color: #287cfe;
+    color: #fff;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 100px;
+    box-sizing: border-box;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #f5f5f5;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: auto;
+    align-items: flex-start;
+  }
+  
+  .FooterSection {
+    width: 30%;
+    text-align: center;
+  }
+  
+  .FooterSection h3 {
+    font-size: 18px;
+    margin-bottom: 7px;
+  }
+  
+  .FooterSection p {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .FooterSection img {
+    width: 70px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+  }
+  
+  /* Media queries */
+  @media only screen and (max-width: 480px) {
+    /* Adjustments for mobile view */
+  
+    .EmailSection {
+      flex-direction: column;
+      align-items: center;
+      outline: none;
+    }
+  
+    .EmailInput:focus {
+      outline: none;
+    }
+  
+    .SignupButton {
+      margin-top: 10px;
+      width: 250px;
+      max-width: unset;
+    }
+  
+    .MiddleSection {
+      margin-bottom: 0;
+      padding: 20px;
+      height: auto;
+      position: relative;
+    }
+  
+    h1 {
+      margin-top: 0;
+    }
+  
+    footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  
+    .FooterSection {
+      width: 100%;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  
+    .HamburgerButton {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+    }
+  
+    .HamburgerButton span {
+      width: 20px;
+      height: 2px;
+      background-color: #000;
+      margin-bottom: 4px;
+    }
+  }
+  
